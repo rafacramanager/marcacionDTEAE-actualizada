@@ -1,0 +1,49 @@
+.navbar-custom {
+    background-color: #343a40;
+    /* Cambia el color de fondo */
+}
+
+.link-style {
+    font-family: 'Arial', sans-serif;
+    /* Cambia la tipografía */
+    font-size: 18px;
+    color: #f8f9fa;
+    /* Cambia el color del texto */
+    transition: color 0.3s ease;
+    /* Agrega una transición al color del texto */
+    padding: 10px;
+}
+
+.link-style:hover {
+    color: #868686;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.btn-close-white {
+    border-color: #103c79;
+    color: #f8f9fa;
+}
+
+.link-style-close {
+    font-family: 'Arial', sans-serif;
+    /* Cambia la tipografía */
+    font-size: 18px;
+    color: #ffffff;
+    /* Cambia el color del texto */
+    transition: color 0.3s ease;
+    /* Agrega una transición al color del texto */
+    padding: 10px;
+}
+
+.link-style-close:hover {
+    color: #9c9c9c;
+}
+
+.offcanvas-header {
+    background-color: #3c424c;
+    /* Cambia el color de fondo del encabezado del offcanvas */
+}
+
+.offcanvas-footer {
+    background-color: #3c424c;
+}

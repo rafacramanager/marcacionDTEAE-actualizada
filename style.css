@@ -1,0 +1,738 @@
+.card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+/* Filto panel  */
+.search-container {
+  text-align: center;
+  font-size: 18px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  color: #103c79;
+
+}
+
+/* filtro actualizar usuario */
+
+#busqueda {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 18px;
+
+}
+
+#resultados {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: #ccc;
+  border: 2px solid #9b9b9b;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+
+}
+
+#resultados div:hover {
+  color: #0000ff;
+  cursor: pointer;
+}
+
+#resultados div:active {
+  color: #ffffff;
+}
+
+
+/* Inputs personalizados para identificar los cambios de usuario */
+#codigo:valid {
+  border: 3px solid #103c79;
+}
+
+#usuario:valid {
+  border: 3px solid #103c79;
+}
+
+#contra:valid {
+  border: 3px solid #103c79;
+}
+
+#correo:valid {
+  border: 3px solid #103c79;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+
+}
+
+li:hover {
+  background-color: #aaa8a8;
+}
+
+
+
+
+
+
+
+
+
+.item {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+body {
+  background-color: #313944;
+  margin: 0;
+}
+
+#Aplicaciones {
+  background-color: #4c596a;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#Mensajes-div {
+  background-color: #272e37;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.table-header {
+  background-color: #4c596a !important;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#Acciones.form-control {
+  margin-bottom: 10px;
+}
+
+
+.card {
+  background-color: #313944;
+  border-radius: 20px;
+  max-height: 600px;
+}
+
+.card img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px auto 0;
+}
+
+#user {
+  background-color: #313944;
+  border-radius: 20px;
+  border: none;
+}
+
+#user img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px auto 0;
+}
+
+#Reporte-text,
+#Marcación-text,
+#Marcación-subtext,
+#Reporte-subtext {
+  color: #ffffff;
+}
+
+#Reporte-button,
+#Marcación-button {
+  background-color: #ffffff;
+  color: #313944;
+  border-radius: 40px;
+  padding: 10px 50px;
+}
+
+/* Espaciado para los botones de acción en pantallas grandes */
+.action-buttons button,
+.action-buttons form {
+  margin-right: 0.5rem;
+  /* Margen derecho entre botones */
+}
+
+.action-buttons form {
+  display: inline-block;
+}
+
+/* Apilar botones verticalmente en dispositivos móviles */
+@media (max-width: 576px) {
+
+  .action-buttons button,
+  .action-buttons form {
+    display: block;
+    /* Apilar verticalmente */
+    width: 100%;
+    /* Asegurar que ocupen todo el ancho disponible */
+    margin-right: 0;
+    /* Quitar margen derecho */
+    margin-bottom: 1rem;
+    /* Margen inferior para asegurar separación vertical */
+  }
+
+  .action-buttons {
+    text-align: center;
+    /* Centrar los botones */
+  }
+}
+
+
+.icono {
+  transition: transform 0.3s;
+  /* Agrega una transición suave */
+}
+
+.logo {
+  width: 20%;
+  border-radius: 30px;
+}
+
+/* #Logo {
+  width: 50%;
+  border-radius: 30px;
+} */
+
+#Links {
+  color: #ffffff;
+  text-decoration: none;
+  /* Opcional: para quitar el subrayado de los enlaces */
+}
+
+#Links:hover {
+  color: #a7a7a7;
+  /* Color que se muestra al pasar el cursor sobre el enlace */
+}
+
+
+#Login {
+  background-color: #313944;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+#Titulo {
+  color: #ffffff;
+}
+
+#Subtitulo {
+  color: #ffffff;
+}
+
+#Subtitulo-table {
+  color: #103c79;
+}
+
+#Texto {
+  color: #ffffff;
+}
+
+#Usuario {
+  color: #ffffff;
+}
+
+#Botones {
+  background-color: #4c596a;
+  color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  width: 25%;
+}
+
+@media (max-width: 576px) {
+  #Botones {
+    width: 100%;
+  }
+}
+
+#Botones-men {
+  background-color: #4c596a;
+  color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+}
+
+#Botones-men:hover {
+  transform: scale(1.02);
+
+}
+
+#Limpiar {
+  border-radius: 50%;
+  border-top: none;
+  background-color: #103c79;
+  padding: 10px 15px;
+}
+
+#Entrar {
+  background-color: #313944;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 20px 100px;
+}
+
+.custom-input {
+  width: 100px;
+}
+
+
+#Registro {
+  background-color: #103c79;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+#Actualizar {
+  background-color: #103c79;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+}
+
+#Marcacion {
+  background-color: #103c79;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#Fotos {
+  background-color: #313944;
+  padding: 50px 50px;
+  border-radius: 30px;
+}
+
+#Boton-Marcacion {
+  background-color: #0000ff;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 20px 50px;
+  border: none;
+}
+
+#infotipo {
+  color: #ffffff;
+}
+
+#permisoSeleccionadoTexto {
+  color: #ffffff;
+}
+
+.custom-btn {
+  background-color: #4c596a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+}
+
+#btn-repo-link {
+  color: #313944;
+  text-decoration: none;
+}
+
+
+#HR-COLOR {
+  border: none;
+  border-top: 3px solid #ffffff;
+  /* Cambia el valor de 2px al grosor deseado */
+}
+
+.nombre-usuario {
+  color: #2b7beb;
+}
+
+#nombre-root {
+  color: #2b7beb;
+}
+
+/* Estilo personalizado para el campo month */
+.custom-month-input {
+  width: 200px;
+  /* Ancho personalizado, ajusta según tus necesidades */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+}
+
+
+#tomarFoto {
+  background-color: #103c79;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 10px 50px;
+  border: none;
+}
+
+#tipoPermiso {
+  background-color: #282c34;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 10px 50px;
+  border: none;
+}
+
+.codigo {
+  color: #2b7beb;
+  /* Cambia este valor al color que desees */
+}
+
+#horaMostrar {
+  color: #f3c809;
+  /* Cambia este valor al color que desees */
+}
+
+/* Estilo para la fecha */
+#fechaMostrar {
+  color: #f3c809;
+  /* Cambia este valor al color que desees */
+}
+
+/* Agrega un estilo CSS para el color del código de usuario */
+.codigo-usuario {
+  color: #ffffff;
+  /* Cambia "red" al color que desees */
+}
+
+/* Agrega un estilo CSS para el color de las coordenadas */
+.coordenadas {
+  color: #ffffff;
+  /* Cambia "blue" al color que desees */
+}
+
+/* Agrega un estilo CSS para el color de la hora de marcación */
+.hora-marcacion {
+  color: #ffffff;
+  /* Cambia "green" al color que desees */
+}
+
+/* Agrega un estilo CSS para el color de la fecha de marcación */
+.fecha-marcacion {
+  color: #f9f9f9;
+  /* Cambia "blue" al color que desees */
+}
+
+
+
+/* Media query para diseño responsive */
+@media (max-width: 576px) {
+
+  #Reporte-button,
+  #Marcación-button,
+  #Registro,
+  #Entrar {
+    padding: 10px 40px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #Logo {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  #Login {
+    padding: 20px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Calendario semanal parte de los técnicos */
+
+#impreso {
+  overflow-x: auto;
+  background-color: white;
+}
+
+/* Mantener el diseño de la cabecera igual que en PC */
+@media (max-width: 768px) {
+
+  .report-header,
+  .calendar-table {
+    min-width: 600px;
+    /* Ajusta el ancho mínimo según sea necesario */
+  }
+}
+
+.calendar-table td {
+  vertical-align: top;
+  width: 100px;
+}
+
+.calendar-table .day-cell {
+  border: 1px solid #000000;
+  padding: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.calendar-table .header {
+  font-weight: bold;
+  text-align: center;
+  background-color: #aaadad;
+}
+
+
+
+/*Forma para el encabezado con el logo y texto*/
+
+.report-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.report-header img {
+  width: 200px;
+  /* Ajusta el ancho según sea necesario */
+  height: auto;
+  margin-right: 20px;
+  /* Espacio entre la imagen y el texto */
+}
+
+.report-header-text {
+  text-align: left;
+}
+
+.report-header-text h5,
+.report-header-text h6 {
+  margin: 5px 0;
+}
+
+/* Estilo para los botones fuera del modal */
+.button-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para los botones principales */
+.btn-primary {
+  background-color: #1d529e;
+  border-color: #1d529e;
+}
+
+.btn-primary:hover {
+  background-color: #1d529e;
+  border-color: #0e2a51;
+}
+
+/* Estilo para los botones secundarios */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #4e555b;
+}
+
+/* Estilo de los modal de bootstrap en la secion de asignar actividades */
+
+/* Modal de asignar actividades */
+#modalAsignarActividad .modal-header,
+#modalAsignarActividad .modal-body,
+#modalAsignarActividad .modal-footer {
+  border: none;
+  margin: 0;
+  padding: 16px;
+}
+
+/* Modal de descripción de actividades */
+#descripcionModal .modal-header,
+#descripcionModal .modal-body,
+#descripcionModal .modal-footer {
+  border: none;
+  margin: 0;
+  padding: 16px;
+}
+
+/* Modal de edicion de actividades */
+#editarModal .modal-header,
+#editarModal .modal-body,
+#editarModal .modal-footer {
+  border: none;
+  margin: 0;
+  padding: 16px;
+}
+
+/* Modal de confirmacion de eliminacion */
+#confirmarEliminacionModal .modal-header,
+#confirmarEliminacionModal .modal-body,
+#confirmarEliminacionModal .modal-footer {
+  border: none;
+  margin: 0;
+  padding: 16px;
+}
+
+/* Estilos del datatable */
+
+#Tabla_filter {
+  color: #ffffff;
+}
+
+#Tabla_filter input[type="search"] {
+  background-color: #fff;
+  color: #000000;
+}
+
+#Tabla_paginate .paginate_button {
+  color: #ffffff;
+  background-color: #4c596a;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+
+}
+
+#Tabla_paginate .paginate_button:hover {
+  background-color: #212529;
+}
+
+#Tabla_length {
+  color: white;
+}
+
+#Tabla_info {
+  color: #ffffff;
+}
+
+#Tabla_length select {
+  background-color: #3c424c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Leyenda de estados de actividades */
+/* Estilo general */
+.legend-container {
+  background-color: #212529;
+  color: white;
+  text-align: left;
+  /* Alinear todo el contenido a la izquierda */
+}
+
+/* Ajustar círculo de estado */
+.status-circle {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* Ajustar texto */
+.status-text {
+  font-size: 14px;
+  /* Tamaño base */
+}
+
+/* Responsivo para móviles */
+@media (max-width: 576px) {
+  .legend-container {
+    padding: 1rem;
+  }
+
+  .status-text {
+    font-size: 12px;
+    /* Reducir el tamaño de texto */
+  }
+
+  h6 {
+    font-size: 14px;
+    /* Reducir el tamaño del encabezado */
+  }
+}
+
+#my_camera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  /* Para asegurarte de que ocupa todo el contenedor disponible */
+  max-width: 250px;
+  /* Ajusta el tamaño según necesites */
+}
+
+/* estilos de los botones de exportaciones  */
+/* Contenedor de los botones */
+.botones-contenedor {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* estilos para la tabla de consulta de reportes */
+#Tabla-Consulta th {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+#Tabla-Consulta tbody {
+  color: #ffffff;
+}
+
+/* estilos botones de regresar del panel de administrador */
+.button-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
